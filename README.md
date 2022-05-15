@@ -1,6 +1,6 @@
 # Pewlett-Hackard-Analysis
 
-#### Employee database analysis on retiring employees using SQL and pgAdmin
+Employee database analysis on retiring employees using SQL and pgAdmin
 
 ## Overview
 
@@ -17,7 +17,7 @@ The purpose of this project was to analyze the data at Pewlett-Hackard (PW) and 
 [unique_titles.csv](https://github.com/jtspingler/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)
 
 - Breakdown of employees leaving by department: 29,414 Senior Engineers, 28,254 Senior Staff, 14,222 Engineers, 12,243 Staff, 4,502 Technique Leaders, 1,761 Assistant Engineers, and 2 Managers. 
-- 
+
 ![unique_titles_pic](https://github.com/jtspingler/Pewlett-Hackard-Analysis/blob/main/unique_titles_pic.PNG)
 
 -By joining the employees, department employees, and the titles tab I was able to create the mentorship eligibility table which will allow for PH to plan accordingly for the mentorship package.

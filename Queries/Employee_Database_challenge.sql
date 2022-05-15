@@ -42,3 +42,18 @@ WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1965-01-01' AND '19
 ORDER BY e.emp_no
 
 SELECT * FROM mentorship_eligibility
+
+SELECT DISTINCT ON (e.emp_no) e.emp_no,
+    e.first_name,
+    e.last_name,
+    t.title,
+    t.from_date,
+    t.to_date
+INTO all_employees
+FROM employees as e
+LEFT JOIN titles as t
+ON e.emp_no = t.emp_no
+ORDER BY e.emp_no, t.to_date DESC
+
+SELECT COUNT (emp_no)
+FROM all_employees
